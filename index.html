@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preload" href="./img/gus-anim.gif" as="image">    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Lego Models</title>
+</head>
+<body>
+    <section class="main-page">
+        <img src="img/logoT.png"  alt="" class="logo-site">
+        <div class="wrapper">
+            
+            <div class="main-page-text-containeer">
+                <p class="main-page-hello-text">сайт для лего моделістів</p>
+                <h1 class="main-page-tittle">Lego Models</h1>
+                <p class="main-page-descr">Спеціальний сайт для замовлень лего моделей в різних маштабах як 1/45, 1/40 і 1/35
+                </p>
+                <button type="button" class="main-page-button" id="go-to-form-btn">Замовити модель</button>
+            </div>
+            <img src="img/tank1.png"  alt="gus" class="tank1-img">
+        </div>
+    </section>
+    
+    <section class="info">
+        <h2 class="info-title">інформаційна дошка</h2>
+        <p class="info-descr">сайт де можна замовити модель з конструктора "LEGO" </p>
+        <div class="wrapper">
+            <div class="info-items">
+                <img src="img/Tiger-1-image-1-1200x900.jpg" alt="info 1" class="" width="250" height="200">
+                <h3 class="info-items-title">замовити модель</h3>
+                <p class="info-items-title-descr">вказуй ваші дані (емейл, ел-пошта, та і'мя), потім назву моделю яку ви забажаєте і натисніть кнопку "відправити замовлення"</p>
+            </div>
+            <div class="info-items">
+                <img src="img/aviationscale.png" alt="info 2" class="" width="350" height="200">
+                <h3 class="info-items-title">масштаб</h3>
+                <p class="info-items-title-descr">вказуйте в якому масштабі ви хочете бачити модель. найпоширені це 1/45, 1/40 та 1/35 </p>
+            </div>
+            <div class="info-items">
+                <img src="img/istockphoto-134536445-612x612.jpg" alt="info 3" class="" width="200" height="200">
+                <h3 class="info-items-title">час виконання замовлення</h3>
+                <p class="info-items-title-descr">залежить від ваших побажань, в середньому це місяць</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-containeer">
+    <form action="#" class="form" id="form"> 
+        
+        <h4 class="form-title">заповніть будь ласка анкету для замовлення</h4>
+        <p class="form-descr">та чекай замовлення</p>
+
+        <div class="form-field form-field-name">
+            <label for="user-name" class="form-field-label">Ім'я</label>
+            <input type="text" id="user-name" class="form-input">
+        </div>
+        <div class="form-field form-field-email">
+            <label for="user-email" class="form-field-label">Email</label>
+            <input type="email" id="user-email" class="form-input">
+        </div>
+        <div class="form-field form-field-model">
+            <label for="user-email" class="form-field-label">Назва моделю</label>
+            <input type="email" id="user-email" class="form-input">
+        </div>
+        <div class="form-field form-field-scale">
+            <label for="scale" class="form-field-label">Масштаб</label>
+            <div id="scale-options">
+                <label><input type="radio" name="scale" value="1/45"> 1/45</label>
+                <label><input type="radio" name="scale" value="1/40"> 1/40</label>
+                <label><input type="radio" name="scale" value="1/35"> 1/35</label>
+                <label><input type="radio" name="scale" value="other"> Інше</label>
+            </div>
+        </div>
+        <button type="submit" class="form-btn" id="launch-btn">Відправити замовлення</button>
+    </form>
+    </section>
+
+    <script src="js/form.js"></script>
+</body>
+</html>
